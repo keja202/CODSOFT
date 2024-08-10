@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<style type="text/css">
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5c412d;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    text-align:right;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#home {
+    height: 68vh;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('http://2.bp.blogspot.com/-NsAPpW9oHZU/UREmA63dHEI/AAAAAAAAR3M/2yLVVPeIk_k/s1920/coffee-bean-wallpaper-8.jpg'); /* replace with your own image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 15px;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h1 {
+    height: 250px;
+    width: 70%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    font-size: 55px;
+    padding-left: 450px;
+    font-weight: bold;
+}
+
+#home p h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#home p+h1,#home h1+p{
+    margin-top: 0;
+}
+
+#home p{
+    font-family: 'Times New Roman', Times, serif;
+    width: 70%;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 450px;
+    font-weight: bold;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: right;
+}
+
+.cta-button {
+    margin-left: 610px;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.img{
+    margin-right: 20px;
+    float: right;
+    width: 50%;
+}
+
+#about{
+    background-color: white;
+    height: 57vh;
+}
+
+#about p h1 h5{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#about h5+h1,#about h1+h5{
+   margin-top: 0;
+}
+
+#about p+h1,#about h1+p{
+   margin-top: 0;
+}
+
+#about p h5 h1{
+    padding: auto;
+    margin-top: 5%;
+    width: 50%;
+    max-width: 50%;
+   text-align: right;
+}
+
+#about p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    max-width: 40%;
+    margin-left: 50px;
+}
+
+#about h5{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-left: 50px;
+    color: #a37351;
+}
+
+#about h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    white-space: wrap;
+    text-align: center;
+    font-size: 40px;
+}
+
+#coffee{
+    height: 92vh;
+    background-color: #fffaf0;
+
+}
+
+#coffee h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+}
+
+#coffee h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:medium;
+    padding-top: 0 auto;
+    text-align: center;
+    color: #333;
+}
+
+#coffee h2 h5{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#coffee h5+h2,#coffee h2+h5{
+   margin-top: 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+    margin-left: 150px;
+    padding-right: 350px;
+}
+
+.project-card h3{
+    text-align: center;
+}
+
+.project-card p{
+    text-align: center;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.project-card {
+    width: 330px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#review{
+    font-family: 'Times New Roman', Times, serif;
+    height: 90vh;
+    background-color: whitesmoke;
+
+}
+
+#review h1{
+    text-align: center;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.review {
+    padding-right: 50px;
+    margin-top: 70px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 28%;
+    min-width: 250px;
+}
+
+.review .stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+}
+
+.review .stars i {
+    color: gold;
+    font-size: 2rem;
+    margin: 0 0.2rem;
+}
+
+.review .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.review .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.review .user .name {
+    font-weight: bold;
+}
+
+.review .user .details {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.review .quote {
+    margin-bottom: 1rem;
+}
+
+.review .button {
+    background-color: goldenrod;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.review .button:hover {
+    background-color: rgba(1, 0, 0, 0);
+}
+
+#services{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#services p1{
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+#services b1{
+    margin-left: 55px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+#contact{
+    color: #fff;
+    height: 72vh;
+    background-image: url("http://2.bp.blogspot.com/-SllXAlZwCSc/URElpoNS6YI/AAAAAAAAR2c/y4Vyd6bTIXw/s1920/coffee-bean-wallpaper-2.jpg");
+}
+
+#contact h2,p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form button{
+    margin-left: 180px;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-left: 190px;
+    width: 50%;
+    padding: 10px;
+    background-color: #a67b5b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #a67b5b;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>N<sup>2</sup>S Cafe</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#coffee">Coffee</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+            <p>NOW YOU CAN FEEL THE ENERGY</p>
+            <h1>Start your day with a black coffee</h1>
+            <a href="#coffee" class="cta-button">BUY NOW</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="img">
+            <img src="https://www.duckbar.co.uk/wp-content/uploads/2017/05/making_coffee.jpg" width="600" height="400">
+        </div>
+        <h5>LIVE COFFEE MAKING PROCESS</h5>
+        <h1>We Telecast our Coffee Making Live</h1>
+        <p>
+            You can see the care and attention that goes into every cup. From bean to brew, we want you to experience the art of coffee-making firsthand. Whether you're a coffee connoisseur or just looking for a great cup, we invite you to join us and be a part of the process.
+        </p>
+    </section>
+
+    <section id="coffee">
+        <h2>What kind of Coffee we serve for you</h2>
+        <h5>Awaken Your Senses with Our Coffee</h5>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Cappuccino &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>₹295</b></h3>
+                <p>A perfect blend of art and science</p>
+            </div>
+            <div class="project-card">
+                <h3>Americano &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>₹245</b></h3>
+                <p>A classic,revitalized</p>
+            </div>
+            <div class="project-card">
+                <h3>Espresso &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>₹315</b></h3>
+                <p>The purest form of energy</p>
+            </div>
+            <div class="project-card">
+                <h3>Macchiato &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>₹470</b></h3>
+                <p>A delicate balance of flavors</p>
+            </div>
+            <div class="project-card">
+                <h3>Mocha &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>₹410</b></h3>
+                <p>Indulge in the richness</p>
+            </div>
+            <div class="project-card">
+                <h3>Coffee Latte &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>₹440</b></h3>
+                <p>A comforting blend of coffee and cream</p>
+            </div>
+            <div class="project-card">
+                <h3>Piccolo Latte &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>₹400</b></h3>
+                <p>A small but mighty delight</p>
+            </div>
+            <div class="project-card">
+                <h3>Ristretto &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>₹470</b></h3>
+                <p>A concentrated dose of coffee love</p>
+            </div>
+            <div class="project-card">
+                <h3>Affogato &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>₹275</b></h3>
+                <p>Drown your senses in coffee and ice cream</p>
+            </div>
+        </div>
+    </section>
+    <section id="review">
+        <h1>What our customers think about us!</h1>
+        <div class="reviews">
+            <div class="review">
+              <div class="stars">
+                <i>☺</i>
+                <i>☺</i>
+                <i>☺</i>
+                <i>☺</i>
+                <i>☺</i>
+              </div>
+              <div class="user">
+                <img src="https://qodebrisbane.com/wp-content/uploads/2019/07/This-is-not-a-person-2-1.jpeg" alt="User Profile Picture">
+                <div>
+                  <span class="name">Nivedha</span>
+                  <span class="details">@Nivedha Nive • 3 years ago</span>
+                </div>
+              </div>
+              <div class="quote">
+                Oh, you gotta try this place! They have amazing Counter Culture coffee, delicious pastries, and a cold case with yummy stuff!
+              </div>
+              <button class="button">Read More</button>
+            </div>
+            <div class="review">
+              <div class="stars">
+                <i>☺</i>
+                <i>☺</i>
+                <i>☺</i>
+                <i>☺</i>
+                <i>☺</i>
+              </div>
+              <div class="user">
+                <img src="https://www.animaker.com/static_2.0/img/hanukkah_maker/joseph-aaron.jpg" alt="User Profile Picture">
+                <div>
+                  <span class="name">Vaithiya Lingam</span>
+                  <span class="details">@Vaithiya Lingam • 3 months ago</span>
+                </div>
+              </div>
+              <div class="quote">
+                Awesome spot! Not only is the coffee ridiculously yummy, but the staff is super friendly too! And the best part? They have multiple Counter Culture roasts to choose from - coffee heaven!
+              </div>
+              <button class="button">Read More</button>
+            </div>
+            <div class="review">
+              <div class="stars">
+                <i>☺</i>
+                <i>☺</i>
+                <i>☺</i>
+              </div>
+              <div class="user">
+                <img src="https://tse4.explicit.bing.net/th?id=OIP.uFGte3ozCTi32NrdViW0fwHaHa&pid=Api&P=0&h=180" alt="User Profile Picture">
+                <div>
+                  <span class="name">Sri Bharathi</span>
+                  <span class="details">@Sri Bharathi • a year ago</span>
+                </div>
+              </div>
+              <div class="quote">
+                Bummer about the special drinks, though! We were really looking forward to trying something unique, but the selection was kinda limited. On the bright side, the service was top-notch and the location is just perfect! Maybe they'll mix things up and add some new specials...
+              </div>
+              <button class="button">Read More</button>
+            </div>
+          </div>
+          <div id="services">
+            <p1>2536&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                7562&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                2013&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                10536
+            </p1>
+            <p>
+                <b1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Happy Client&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b1>
+                Total Projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Cups Coffee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Total Submitted&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+          </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Newsletter</h2>
+            <p>Stay update with out latest</p>
+            <form>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 N<sup>2</sup>S Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<style type="text/css">
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #a67b5b;
+    padding: 20px;
+    text-align:right;
+}
+
+header nav ul {
+    list-style:lower-roman;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-color: #dfd3ca;
+    background-size: 100% 625px;
+    height: 86vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    color: #8c9293;
+}
+
+#hero h1,h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#hero img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.resume a {
+    font-family: 'Times New Roman', Times, serif;
+    display:inline-block;
+    background-color: #c19a6b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#about{
+    height: 90vh;
+    background: linear-gradient(to right,whitesmoke,#dfd3ca);
+}
+
+#about h2{
+    font-family: 'Times New Roman', Times, serif;
+    border-top: 2px solid #c8ad7f;
+    border-bottom: 2px solid #c8ad7f;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+}
+
+#about p{
+    font-family:'Times New Roman', Times, serif;
+    padding: auto;
+    margin-top: 5%;
+    max-width: 50%;
+    font-size: 26px;
+   text-align: left;
+}
+
+.img{
+    float: right;
+    width: 50%;
+    margin-top: 125px;
+}
+
+#resume{
+    height: 98vh;
+    background: linear-gradient(to left,whitesmoke,#dfd3ca);
+}
+
+#resume h2{
+    font-family: 'Times New Roman', Times, serif;
+    border-top: 2px solid #c8ad7f;
+    border-bottom: 2px solid #c8ad7f;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+}
+
+#container div{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    height: 600px;
+    width: 450px;
+    margin: 1px;
+}
+
+#projects{
+    height: 98vh;
+    background: linear-gradient(to right,whitesmoke,#dfd3ca);
+}
+
+#projects h2{
+    font-family: 'Times New Roman', Times, serif;
+    border-top: 2px solid #c8ad7f;
+    border-bottom: 2px solid #c8ad7f;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+}
+
+.project-grid {
+    display: grid;
+    padding-left: 25px;
+    padding-right: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    height: 400px;
+}
+
+.project-card h3{
+    text-align: center;
+}
+
+.project-card p{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    white-space: 50px;
+    width: 350px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-card a {
+    font-family: 'Times New Roman', Times, serif;
+    display:inline-block;
+    background-color: #c19a6b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#contact{
+    height: 75vh;
+    background: linear-gradient(to left,whitesmoke,#dfd3ca);
+}
+
+#contact p{
+    font-size: large;   
+}
+
+#about, #contact {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 50px;
+    text-align: center;
+}
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #a67b5b;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <a href="https://im.ge/i/WhatsApp-Image-2024-08-03-at-11-43-49-b7f7109f.foJLDm"><img src="https://i.im.ge/2024/08/05/foJLDm.WhatsApp-Image-2024-08-03-at-11-43-49-b7f7109f.md.jpeg" alt="WhatsApp Image 2024 08 03 at 11 43 49 b7f7109f" border="0"></a>
+        <h1>HI, I AM KEJA LAKSHMI</h1>
+        <h3>Software Engineer | Web Developer</h3>
+        <div class="resume">
+            <a href="https://pdflink.to/4d52c719/" download>Download Resume</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="img">
+            <img src="https://www.gamelab.id/uploads/modules/3%20(8).jpg?1638853694406" width="600" height="500">
+        </div>
+        <h2>About Me</h2>
+        <p><br>I am a second-year student specializing in Artificial Intelligence and Machine Learning at Sri Krishna College of Technology. With a solid foundation in programming languages like Java, Python, C++, SQL, HTML, CSS, and JavaScript, I am passionate about integrating web development with AI technologies. My hands-on experience includes developing secure applications and creating sophisticated machine learning models, demonstrating my ability to apply technical skills to real-world problems.Driven by a desire to continuously learn and innovate, I am always on the lookout for new challenges and opportunities to grow. Whether it’s working on personal projects or collaborating with others, I am eager to expand my knowledge and contribute to the tech community.
+        </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <div id="container">
+            <div class="col1">
+                <h4>EDUCATION</h4>
+                <p><b>2023 - Present</b><br>Sri Krishna College Of Technology<br>|<br><b>2021 - 2023</b><br>Veveaham Hr Sec School
+                </p>
+            </div>
+            <div class="col2">
+                <h4>SKILLS</h4>
+                <p>Web Development<br>|<br>Machine Learning<br>|<br>Problem Solving<br>|<br>Code Debugging<br>|<br>Communication<br>|<br>Team Work and Collaboration<br>|<br>Java,Python,C++<br>|<br>Html,CSS</p>
+            </div>
+            <div class="col3">
+                <h4>LANGUAGES</h4>
+                <p>Tamil - Native<br>|<br>English - Advanced<br>|<br>Mandarin - Beginner
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>ML for real-time inventory mangaement and optimization</h3>
+                <p>I developed a Machine Learning model that integrate data and predict demand forecasting and
+                    it would dynamically optimize the inventory levels by identifying and managing risks.</p>
+               <a href="https://pdflink.to/e5bb68a5/" download>Download PDF</a>
+            </div>
+            <div class="project-card">
+                <h3>Time Series Forecasting for stock Prices</h3>
+            <p>
+                I developed a Machine Learning model that focuses on predicting future stock Prices
+                using historical data which is crucial for financial analysis and investment strategies.
+            </p>
+            <a href="https://im.ge/i/WhatsApp-Image-2024-08-03-at-12-06-56-a806b3d4.fov1WG"><img src="https://i.im.ge/2024/08/04/fov1WG.WhatsApp-Image-2024-08-03-at-12-06-56-a806b3d4.md.jpeg" alt="WhatsApp Image 2024 08 03 at 12 06 56 a806b3d4" border="0"></a>
+    </section>
+    <section id="contact">
+        <h2><b>Get in Touch</b></h2>
+        <p>Contact me at <b>kejalakshmi543@gmail.com</b></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Keja Lakshmi. All rights reserved</p>
+    </footer>
+</body>
+</html>
